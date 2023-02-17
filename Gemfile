@@ -17,6 +17,7 @@ gem 'redis', '~> 4.0'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[ mingw mswin x64_mingw jruby ]
+gem 'i18n'
 # gem 'image_processing', '~> 1.2'
 
 group :development, :test do
@@ -27,6 +28,7 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
+  gem "i18n-debug"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem 'rack-mini-profiler'
@@ -41,3 +43,5 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
+
+gem "erb-formatter", "~> 0.4.2"
